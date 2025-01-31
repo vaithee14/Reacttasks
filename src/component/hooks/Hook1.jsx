@@ -7,8 +7,7 @@ export default function Hooks1() {
     <>
       <p>The color is {color}</p>
       <button type="button" onClick={() => setColor("blue")}>
-        blue
-      </button>
+        blue </button>
       <button type="button" onClick={() => setColor("green")}>
         Green
       </button>

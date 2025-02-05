@@ -1,10 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import Card from "./cardDesign/Card";
 import Navbar from "./navbar/Navbar";
 import SubmitButton from "./Submitbtn";
 
 export default function Home() {
   // const name = "vaitheeshwari";
-  
+
   const userData = {
     name: "vaitheeshwari",
     mobile: 385738535,
@@ -12,6 +13,11 @@ export default function Home() {
     marks: 848,
   };
 
+  const navigate = useNavigate();
+  const moveBuyNow = () => {
+    navigate("../buy-now");
+    // console.log("working");
+  };
   return (
     <>
       <Navbar />
@@ -21,6 +27,11 @@ export default function Home() {
       <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
       <Card data={userData} />
       <SubmitButton />
+
+      <button type="submit" onClick={moveBuyNow}>
+        {" "}
+        click
+      </button>
     </>
   );
 }

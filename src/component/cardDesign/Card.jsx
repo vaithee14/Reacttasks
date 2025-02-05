@@ -1,13 +1,26 @@
+import { useNavigate } from "react-router-dom";
 import "./Card.css";
 export default function Card({ data }) {
   const userData = data;
   console.log(userData, "data");
 
+  const navigate = useNavigate();
+  // const moveBuyNow = () => {
+  //   console.log("working");
+
+  //   // navigate("../buy-now");
+  // };
+
+  function moveBuyNow() {
+    console.log("working");
+  }
   return (
     <>
       <section class="upcoming-event-borderbox">
         <div class="heading-line-border">
-          <h2 class="upcoming-event-heading">UPCOMING EVENTS</h2>
+          <h2 class="upcoming-event-heading" >
+            UPCOMING EVENTS
+          </h2>
         </div>
         <div class="main-container">
           {/* Event Card  */}

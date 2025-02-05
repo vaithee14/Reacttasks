@@ -3,6 +3,7 @@ import Home from "../component/Home";
 import Hooks1 from "../component/hooks/Hook1";
 import Hook2 from "../component/hooks/Hooks2";
 import ProductView from "../component/product/ProductView";
+import BuyNow from "../component/BuyNow";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/product-view",
     element: <ProductView />,
+  },
+  {
+    path: "buy-now",
+    element: <BuyNow />,
   },
 ]);
 export default router;

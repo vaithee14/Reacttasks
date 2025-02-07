@@ -4,6 +4,7 @@ import Hooks1 from "../component/hooks/Hook1";
 import Hook2 from "../component/hooks/Hooks2";
 import ProductView from "../component/product/ProductView";
 import BuyNow from "../component/BuyNow";
+import Component1 from "../component/hooks/contextHook/Component1";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "buy-now",
     element: <BuyNow />,
+  },
+  {
+    path: "context",
+    element: <Component1 />,
   },
 ]);
 export default router;
